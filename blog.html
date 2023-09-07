@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   </head>
 
 <body>
     <section class="blog-main-page-img row h-75 w-100">
@@ -18,17 +19,20 @@
             <div class="w-100 h-100 only-dark-mode"></div>
         </div>
     </section>
-    <section class="row mt-5 w-100 me-0 ms-0">
+            <!-- img starter -->
+    <section class="row mt-5 w-100 me-0 ms-0  ">
         <div class="w-100 d-flex justify-content-center">
-            <div class="col-10">
-                <div class=" d-flex">
-                <div class="left-side-blog col-3 me-3">
+            <div class="col-11 col-lg-10 bottom-border-for-main">
+                <div class=" d-flex flex-lg-row flex-column align-items-center align-items-lg-start ">
+                    <!-- left -->
+                <div class="left-side-blog col-10 col-sm-6 col-lg-3 me-3">
                     <div class="wordLine mb-3 mt-3">
                         <div><h3>SEARCH</h3></div>
                         <div class="line"></div>
                     </div>
                     <div class="mt-3 search-input mb-3">
                         <input type="text" placeholder="Search">
+                        
                         <button><i class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
                     <div>
@@ -60,13 +64,35 @@
                             <div><h3>RECENT PRODUCT</h3></div>
                             <div class="line"></div>
                         </div>
-                        <div class="three-small-box bg-info">
-                            <div class="d-flex w-100 mt-2">
+                        <div class="three-small-box ">
+                            <div class="d-flex w-100 h-50 mt-4">
                             <div class=" position-relative for-relative-div ">
-                                <div class="position-asolute pos-abs-z1"><img class="h-100 w-100 " src="https://wphix.com/template/pabna/pabna/img/product/12.jpg" alt="img"></div>
-                                <div class="position-asolute pos-abs-z2"><img class="h-100 w-100 " src="https://wphix.com/template/pabna/pabna/img/product/18.jpg" alt="img"></div>
+                                <div class="position-absolute pos-abs-z1"><img class="h-100 w-100 " src="https://wphix.com/template/pabna/pabna/img/product/14.jpg" alt="img"></div>
+                                <div class="position-absolute pos-abs-z2"><img class="h-100 w-100 " src="https://wphix.com/template/pabna/pabna/img/product/22.jpg" alt="img"></div>
                             </div>
-                            <div class="mt-2 ms-3 ">
+                            <div class="mt-1 ms-2 ">
+                                <p class="w-100">Lorem ipsum dolor</p>
+                                <div class="mt-2"><span>$80.00</span><span class="ms-2"><del>$90.00</del></span></div>
+                                
+                            </div>
+                            </div>
+                            <div class="d-flex w-100 mt-4">
+                            <div class=" position-relative for-relative-div ">
+                                <div class="position-absolute pos-abs-z1"><img class="h-100 w-100 " src="https://wphix.com/template/pabna/pabna/img/product/22.jpg" alt="img"></div>
+                                <div class="position-absolute pos-abs-z2"><img class="h-100 w-100 " src="https://wphix.com/template/pabna/pabna/img/product/18.jpg" alt="img"></div>
+                            </div>
+                            <div class="mt-1 ms-2 ">
+                                <p class="w-100">Lorem ipsum dolor</p>
+                                <div class="mt-2"><span>$80.00</span><span class="ms-2"><del>$90.00</del></span></div>
+                                
+                            </div>
+                            </div>
+                            <div class="d-flex w-100 mt-4">
+                            <div class=" position-relative for-relative-div ">
+                                <div class="position-absolute pos-abs-z1"><img class="h-100 w-100 " src="https://wphix.com/template/pabna/pabna/img/product/12.jpg" alt="img"></div>
+                                <div class="position-absolute pos-abs-z2"><img class="h-100 w-100 " src="https://wphix.com/template/pabna/pabna/img/product/14.jpg" alt="img"></div>
+                            </div>
+                            <div class="mt-1 ms-2 ">
                                 <p class="w-100">Lorem ipsum dolor</p>
                                 <div class="mt-2"><span>$80.00</span><span class="ms-2"><del>$90.00</del></span></div>
                                 
@@ -148,14 +174,13 @@
                                 <span>Boys</span>
                                 <span>Girls</span>
                                 <span>Best</span>
-                                <span>Better</span>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="d-flex flex-column">
-                <div class="right-side-blog col-12 ps-1 pe-4 mb-5 mt-3">
+                    <!-- right -->
+                <div class="d-flex flex-column col-11 col-lg-9 mb-3">
+                <div class="right-side-blog col-12 ps-1 pe-4  h-auto mt-3">
                     <div class="h-75 position-relative animation-img">
                         <img class="h-100 w-100" src="https://wphix.com/template/pabna/pabna/img/blog/2.jpg" alt="Img">
                         <div class="left-animation-div h-100">
@@ -180,7 +205,7 @@
                         <p class="readMore">READ MORE<span class="ms-1 right-icon-for-read"><i class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></span></p>
                     </div>
                 </div>
-                <div class="right-side-blog col-12 ps-1 pe-4 mb-5 mt-3">
+                <div class="right-side-blog col-12 ps-1 pe-4  mt-3">
                     <div class="h-75 position-relative animation-img">
                         <img class="h-100 w-100" src="https://wphix.com/template/pabna/pabna/img/blog/1.jpg" alt="Img">
                         <div class="left-animation-div h-100">
@@ -205,32 +230,8 @@
                         <p class="readMore">READ MORE<span class="ms-1 right-icon-for-read"><i class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></span></p>
                     </div>
                 </div>
-                <div class="right-side-blog col-12 ps-1 pe-4 mb-5 mt-3">
-                    <div class="h-75 position-relative animation-img">
-                        <img class="h-100 w-100" src="https://wphix.com/template/pabna/pabna/img/blog/2.jpg" alt="Img">
-                        <div class="left-animation-div h-100">
-
-                        </div>
-                        <div class="right-animation-div h-100">
-
-                        </div>
-                    </div>
-                    <div class="w-12 div-border-bottom">
-                        <p class="blog-p-element">LOREM IPSUM DOLOR SIT</p>
-                        <span class="opacity-span">JUL 6,2015 | BY BASICTHEME IN | MEN'S STYLE</span>
-                    </div>
-
-                    <div>
-                        <p class="lorem-p-img">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                            nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                            Duis autem vel eum iriure dolor in hendrerit in .....</p>
-                    </div>
-                    <div>
-                        <p class="readMore">READ MORE<span class="ms-1 right-icon-for-read"><i class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></span></p>
-                    </div>
-                </div>
-                <div class="right-side-blog col-12 ps-1 pe-4 mb-5 mt-3">
+               
+                <div class="right-side-blog col-12 ps-1 pe-4  mt-3">
                     <div class="h-75 position-relative animation-img">
                         <img class="h-100 w-100" src="https://wphix.com/template/pabna/pabna/img/blog/4.jpg" alt="Img">
                         <div class="left-animation-div h-100">
@@ -255,9 +256,10 @@
                         <p class="readMore">READ MORE<span class="ms-1 right-icon-for-read"><i class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></span></p>
                     </div>
                 </div>
-                <div class="right-side-blog col-12 ps-1 pe-4 mb-5 mt-3">
+                
+                <div class="right-side-blog col-12 ps-1 pe-4  mt-3">
                     <div class="h-75 position-relative animation-img">
-                        <img class="h-100 w-100" src="https://wphix.com/template/pabna/pabna/img/blog/2.jpg" alt="Img">
+                        <img class="h-100 w-100" src="https://wphix.com/template/pabna/pabna/img/blog/1.jpg" alt="Img">
                         <div class="left-animation-div h-100">
 
                         </div>
@@ -282,6 +284,17 @@
                 </div>
             </div>
             </div>
+            </div>
+        </div>
+    </section>
+    <section class="pagination w-100 h-25">
+        <div class="pagination-div h-100 w-100  d-flex justify-content-center align-items-center">
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
             </div>
         </div>
     </section>
