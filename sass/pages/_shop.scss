@@ -1,0 +1,67 @@
+.three-span-shop{
+    span {
+          color: white;
+          transition: all .6s !important;
+      
+          &:hover {
+            color: rgb(230, 87, 30) !important;
+          }
+        }
+}
+.blog-writing-center-three-span{
+    top:40%;
+    left:38%;
+    cursor: pointer;
+    h1{
+        font-size:220%;
+        font-family: 'Times New Roman', Times, serif;
+        color:white;
+        font-weight: 900;
+    }  
+}
+.categories-div-li{
+    ul{
+        li{
+            div{
+                span{
+                        &:nth-child(n+1){
+                            font-size: 88%;
+                        }
+                }
+            }
+        }
+    }
+}
+.range-slider{
+    margin-top: 5%;
+    div{
+        height: 8px;
+        background-color: aqua;
+        border-radius: 100px; 
+        position: relative;
+        div{ 
+            position: absolute;
+
+            height: 100%;
+            width: 100%;
+            background-color: rgb(233, 61, 18);
+            div{
+              position: absolute;
+              top: -70%;
+                &:nth-child(1){
+                    left: 0%;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                }
+                &:nth-child(2){
+                    right: 0%;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;  
+                }
+            }
+        }
+
+    }
+}

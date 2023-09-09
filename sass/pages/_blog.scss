@@ -15,7 +15,7 @@ background-color: rgba(0, 0, 0, 0.4);
 }
 .blog-writing-center{
     top:40%;
-    left:45%;
+    left:40%;
     cursor: pointer;
     h1{
         font-size:220%;
@@ -93,6 +93,7 @@ background-color: rgba(0, 0, 0, 0.4);
  .readMore{
   font-size: 80%;
   font-weight: 900;
+  opacity: 0.8;
  }
  .right-icon-for-read{
   i{
@@ -101,25 +102,29 @@ background-color: rgba(0, 0, 0, 0.4);
   
  }
  .wordLine{
+  div{
   &:first-child{
-    h1{
-      font-weight: 900;
+    h3{
+      font-size: 130% !important;
+      font-weight: 700;
     }
-  }
+  }}
   
  }
  .line{
-    width: 60px;
+    width: 70px;
     height:3px;
     margin-top: 1%;
     background-color: rgb(173, 172, 172);
   }
   .search-input{
+    position: relative;
     input {
-      width: 80%;
-      height:1.2%;
+      width: 100%;
+      height:35px;
       border-radius: 0 !important;
       padding-left: 2%;
+      
       outline: none;
       border:1px solid rgb(20, 20, 20,0.4);
       &::placeholder{
@@ -129,7 +134,10 @@ background-color: rgba(0, 0, 0, 0.4);
     }
     button{
       width: 15%;
-      height: 1.2%;
+      height: 100%;
+    
+      position: absolute;
+        left: 85%;
       background-color: rgb(150, 149, 149);
       border: none; 
       transition: all .6s !important;
@@ -144,6 +152,7 @@ background-color: rgba(0, 0, 0, 0.4);
   .categories-div-li{
     margin-top: 5%;
       ul{
+        padding-left: 0px !important;
         li{
           margin-top: 5%;
           padding-bottom: 2%;
@@ -156,7 +165,7 @@ background-color: rgba(0, 0, 0, 0.4);
              span{
               &:first-child{
                    display:inline-block;
-           width: 7px;
+           width: 5px;
            height:5px;
            background-color: rgb(104, 103, 103);
            margin-bottom:2px;
@@ -181,26 +190,13 @@ background-color: rgba(0, 0, 0, 0.4);
     height: 15%;
     width:100%;
     div{
-      div{
-
-      
-      // &:first-child{
-      //   height: 40%;
-      //   width:34%;
-      //   div{
-      //     // // &:first-child{
-      //     // //       position: absolute;
-      //     // // }
-      //     // &:nth-child(2){
-      //     //       position: absolute;
-      //     //       z-index: 40;
-      //     // }
-      //   }
-      }
+      width: 100%;
+      height: 27%;
         &:nth-child(2){
           p{
             color:rgb(0, 0, 0);
             font-size: 110%;
+            margin-bottom: 0% !important;
           }
           div{
             span{
@@ -221,19 +217,37 @@ background-color: rgba(0, 0, 0, 0.4);
   
 
     .for-relative-div{
-      width: 30%;
-      height:40%;
+      width: 50% !important;
+      height:110px !important;
+      overflow: hidden;
       div{
         width:100%;
         height:100%;
+
       }
     }
     .pos-abs-z1{
-      z-index: 233;
+      width: 90%;
+      height: 90%;
+      z-index: 2;
     }
-    .pos-abs-zs{
-      z-index: 32233;
+    .pos-abs-z2 {
+      width: 90%;
+      height: 90%;
+      transition: all 0.8s ease; 
+      z-index: 1;
     }
+    
+    .for-relative-div {
+      &:hover {
+        .pos-abs-z2 {
+          transform: scale(1.1); 
+          z-index: 3;
+          filter: brightness(50%);
+        }
+      }
+    }
+    
     .papularTag{
       display: flex;
       flex-wrap: wrap;
@@ -242,5 +256,46 @@ background-color: rgba(0, 0, 0, 0.4);
         opacity:0.6;
         padding:2% 5% ;
         margin:1%;
+        font-size: 95%;
       }
     }
+    .right-side-blog{
+      margin-bottom: 10%;
+    }
+    .vidio-center{
+      h1{
+        font-size: 480% !important;
+        text-align: center;
+      }
+    }
+    .video-div-for-height{
+      height: 63% !important;
+    }
+
+    .right-side-blog-sorry{
+      height: 29% !important;
+    }
+    .pagination {
+      display: inline-block;
+  }
+
+  .pagination a {
+      color: #333;
+      float: left;
+      padding: 8px 16px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+  }
+
+  .pagination a.active {
+      background-color: #f83d3d;
+      color: white;
+  }
+
+  .pagination a:hover:not(.active) {
+      background-color: #f83d3d;
+      color: white;
+  }
+  .bottom-border-for-main{
+    border-bottom: 1px solid rgb(31, 30, 30,0.2);
+  }
