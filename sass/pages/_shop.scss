@@ -47,21 +47,47 @@
             background-color: rgb(233, 61, 18);
             div{
               position: absolute;
-              top: -70%;
+              top: -100%;
                 &:nth-child(1){
-                    left: 0%;
-                    width: 20px;
-                    height: 20px;
+                    left: -15px;
+                    width: 30px;
+                    height: 30px;
                     border-radius: 50%;
                 }
                 &:nth-child(2){
-                    right: 0%;
-                    width: 20px;
-                    height: 20px;
+                    right: -15px;
+                    width: 30px;
+                    height: 30px;
                     border-radius: 50%;  
                 }
             }
         }
 
+    }
+}
+.input-abs{
+    top:0px;
+    z-index: 0;
+}
+// .left-range{
+//     &:hover{
+//         .for-z-index{
+//             z-index: 5 !important; 
+//         }  
+//     }
+// }
+.view-shop {
+    font-size: 125%;
+    opacity: 0.8;
+  span{
+    margin-left: 2%;
+  }
+}
+.sortBy{
+    font-size: 125%;
+}
+.border-for-shop-small-pagination{
+    a{
+        border: 1px solid rgb(36, 35, 35,0.1);
     }
 }
