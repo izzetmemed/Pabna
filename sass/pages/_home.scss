@@ -62,6 +62,7 @@
         .navbar-nav {
             .nav-content {
                 padding: 15px;
+                position: relative;
 
                 .nav-link {
                     font-size: 14px;
@@ -74,219 +75,234 @@
                     }
                 }
 
-                .dropdown {
-                    position: relative;
-                    transition: .1s;
-                    margin: 0;
-                    width: 100%;
-                    height: 100%;
+                .dropdown-home {
+                    position: absolute;
+                    width: 200%;
+                    top: 100%;
+                    left: 25%;
+                    z-index: 1 !important;
+                    visibility: hidden;
+                    opacity: 0;
+                    background: #fff;
+                    transition: all 0.4s;
 
-                    .dropdown-home {
-                        position: absolute;
-                        width: 350%;
-                        height: 300%;
-                        top: 180%;
-                        left: 0;
-                        z-index: 1 !important;
-                        display: none;
-                        background: #fff;
-
-                        a {
-                            display: block;
-                            text-decoration: none;
-                            font-size: 13px;
-                            font-weight: 500;
-                            color: #666;
-
-                            padding-left: 12px;
-                            padding-top: 5px;
-                            height: 34%;
-                            margin: 0 !important;
-                            border-bottom: 1px solid #b0b0b087;
-
-                            &:nth-child(3) {
-                                border-bottom: none !important;
-                            }
-
-                            &:hover {
-                                background-color: #FE4847;
-                                color: #fff;
-                            }
-                        }
-                    }
-
-
-                    .dropdown-shop {
-                        position: absolute;
-                        padding: 10px;
-                        padding-left: 30px;
-                        padding-bottom: 20px;
-                        top: 158%;
-                        left: -700px;
-                        display: none;
-                        background: #fff;
-                        width: 1150px;
-
-                        img {
-                            padding: 10px;
-                            width: 110%;
-                            margin-top: 10px;
-                        }
-
-                        .nav-shop-item {
-                            padding: 5px;
-
-                            .nav-shop-name {
-                                padding-top: 10px;
-                                padding-bottom: 5px;
-                                border-bottom: 1px solid #666;
-                                width: 85%;
-
-                                a {
-                                    font-size: 15px;
-                                    font-weight: 600;
-                                    color: #444;
-                                    padding-top: 10px;
-                                    padding-right: 10px;
-                                    transition: .3s;
-
-                                    &:hover {
-                                        color: #FE4847;
-                                    }
-                                }
-                            }
-
-                            .nav-shop-list {
-                                ul {
-                                    a {
-                                        text-decoration: none;
-                                        color: #444;
-                                        display: block;
-                                        padding: 5px;
-                                        padding-left: 3px;
-                                        transition: .3s;
-
-                                        &:hover {
-                                            color: #FE4847;
-
-                                        }
-                                    }
-                                }
-                            }
-                        }
-
-                    }
-
-                    .dropdown-cloth {
-                        position: absolute;
-                        padding: 10px;
-                        padding-left: 30px;
-                        padding-bottom: 20px;
-                        top: 158%;
-                        left: -500px;
-                        display: none;
-                        background: #fff;
-                        width: 900px;
-
-                        img {
-                            padding: 10px;
-                            width: 110%;
-                            margin-top: 10px;
-                        }
-
-                        .nav-shop-item {
-                            padding: 5px;
-
-                            .nav-shop-name {
-                                padding-top: 10px;
-                                padding-bottom: 5px;
-                                border-bottom: 1px solid #666;
-                                width: 85%;
-
-                                a {
-                                    font-size: 15px;
-                                    font-weight: 600;
-                                    color: #444;
-                                    padding-top: 10px;
-                                    padding-right: 10px;
-                                    transition: .3s;
-
-                                    &:hover {
-                                        color: #FE4847;
-                                    }
-                                }
-                            }
-
-                            .nav-shop-list {
-                                ul {
-                                    a {
-                                        text-decoration: none;
-                                        color: #444;
-                                        display: block;
-                                        padding: 5px;
-                                        padding-left: 3px;
-                                        transition: .3s;
-
-                                        &:hover {
-                                            color: #FE4847;
-
-                                        }
-                                    }
-                                }
-                            }
-                        }
-
-                    }
-
-                    .dropdown-page {
-                        position: absolute;
-                        top: 158%;
-                        width: 350%;
-                        display: none;
-                        background: #fff;
-
-                        a {
-                            display: block;
-                            text-decoration: none;
-                            font-size: 13px;
-                            font-weight: 500;
-                            color: #666;
-                            padding-left: 12px;
-                            padding-top: 10px;
-                            padding-bottom: 10px;
-                            height: 40%;
-                            margin: 0 !important;
-                            border-bottom: 1px solid #b0b0b087;
-
-                            &:last-child {
-                                border-bottom: none !important;
-                            }
-
-                            &:hover {
-                                background-color: #FE4847;
-                                color: #fff;
-                            }
-                        }
-                    }
-
-
-                    &:hover .dropdown-home {
-                        background-color: #fff;
+                    a {
                         display: block;
-                    }
+                        text-decoration: none;
+                        font-size: 13px;
+                        font-weight: 500;
+                        color: #666;
+                        padding-left: 12px;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        height: 30%;
+                        margin: 0 !important;
+                        border-bottom: 1px solid #b0b0b087;
 
-                    &:hover .dropdown-shop {
-                        display: block;
-                    }
+                        &:nth-child(3) {
+                            border-bottom: none !important;
+                        }
 
-                    &:hover .dropdown-cloth {
-                        display: block;
-                    }
-
-                    &:hover .dropdown-page {
-                        display: block;
+                        &:hover {
+                            background-color: #FE4847;
+                            color: #fff;
+                        }
                     }
                 }
+
+                .dropdown-shop {
+                    position: absolute;
+                    padding: 10px;
+                    padding-left: 30px;
+                    padding-bottom: 20px;
+                    top: 100%;
+                    left: -550px;
+                    visibility: hidden;
+                    opacity: 0;
+                    background: #fff;
+                    width: 1150px;
+                    transition: all 0.4s;
+
+                    img {
+                        padding: 10px;
+                        width: 110%;
+                        margin-top: 10px;
+                    }
+
+                    .nav-shop-item {
+                        padding: 5px;
+
+                        .nav-shop-name {
+                            padding-top: 10px;
+                            padding-bottom: 5px;
+                            border-bottom: 1px solid #666;
+                            width: 85%;
+
+                            a {
+                                font-size: 15px;
+                                font-weight: 600;
+                                color: #444;
+                                padding-top: 10px;
+                                padding-right: 10px;
+                                transition: .3s;
+
+                                &:hover {
+                                    color: #FE4847;
+                                }
+                            }
+                        }
+
+                        .nav-shop-list {
+                            ul {
+                                a {
+                                    text-decoration: none;
+                                    color: #444;
+                                    display: block;
+                                    padding: 5px;
+                                    padding-left: 3px;
+                                    transition: .3s;
+
+                                    &:hover {
+                                        color: #FE4847;
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+                .dropdown-cloth {
+                    position: absolute;
+                    padding: 10px;
+                    padding-left: 30px;
+                    padding-bottom: 20px;
+                    top: 100%;
+                    left: -500px;
+                    visibility: hidden;
+                    opacity: 0;
+                    background: #fff;
+                    width: 900px;
+                    transition: all 0.4s;
+
+                    img {
+                        padding: 10px;
+                        width: 110%;
+                        margin-top: 10px;
+                    }
+
+                    .nav-shop-item {
+                        padding: 5px;
+
+                        .nav-shop-name {
+                            padding-top: 10px;
+                            padding-bottom: 5px;
+                            border-bottom: 1px solid #666;
+                            width: 85%;
+
+                            a {
+                                font-size: 15px;
+                                font-weight: 600;
+                                color: #444;
+                                padding-top: 10px;
+                                padding-right: 10px;
+                                transition: .3s;
+
+                                &:hover {
+                                    color: #FE4847;
+                                }
+                            }
+                        }
+
+                        .nav-shop-list {
+                            ul {
+                                a {
+                                    text-decoration: none;
+                                    color: #444;
+                                    display: block;
+                                    padding: 5px;
+                                    padding-left: 3px;
+                                    transition: .3s;
+
+                                    &:hover {
+                                        color: #FE4847;
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+                .dropdown-page {
+                    position: absolute;
+                    top: 100%;
+                    width: 350%;
+                    visibility: hidden;
+                    opacity: 0;
+                    background: #fff;
+                    transition: all 0.4s;
+
+                    a {
+                        display: block;
+                        text-decoration: none;
+                        font-size: 13px;
+                        font-weight: 500;
+                        color: #666;
+                        padding-left: 12px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        height: 40%;
+                        margin: 0 !important;
+                        border-bottom: 1px solid #b0b0b087;
+
+                        &:last-child {
+                            border-bottom: none !important;
+                        }
+
+                        &:hover {
+                            background-color: #FE4847;
+                            color: #fff;
+                        }
+                    }
+                }
+
+
+
+
+                &:hover .dropdown-shop {
+                    visibility: visible;
+                    opacity: 1;
+                }
+
+                &:hover .dropdown-cloth {
+                    visibility: visible;
+                    opacity: 1;
+                }
+
+                &:hover .dropdown-page {
+                    visibility: visible;
+                    opacity: 1;
+                }
+
+                &:hover .dropdown-home {
+                    background-color: #fff;
+                    visibility: visible;
+                    opacity: 1;
+                }
+
+                // .dropdown {
+                //     transition: .1s;
+                //     margin: 0;
+                //     width: 100%;
+                //     height: 100%;
+
+
+
+
+                // }
             }
 
 
@@ -505,7 +521,29 @@
 
 
 }
+.collection-name-home-blog{
+  position: relative;
+  &::before{
+    position: absolute;
+    content: "";
+    width: 4%;
+    height: 2px;
+    background-color: #444;
+    top: 52.8%;
+    left: 44.4%;
+    
+  }
+  &::after{
+    position: absolute;
+    content: "";
+    width: 4%;
+    height: 2px;
+    background-color: #444;
+    top: 52.8%;
+    left: 51.5%;
 
+  }
+}
 .intro-product-section {
     padding-top: 70px;
     padding-bottom: 80px;
@@ -766,6 +804,7 @@ footer {
 
             .slider-name {
                 font-size: 10px !important;
+
                 span {
 
                     font-size: 35px !important;
@@ -788,6 +827,7 @@ footer {
 
             .slider-name {
                 font-size: 10px !important;
+
                 span {
 
                     font-size: 40px !important;
