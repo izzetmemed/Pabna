@@ -1,0 +1,151 @@
+/* Contact CSS code*/
+.main-area {
+    background-color: #efefef;
+    padding: 100px 0;
+
+    .left-area {
+        .contact-form {
+            color: #444444;
+            background-color: #fff;
+            padding: 30px;
+
+            .message-form {
+                h1 {
+                    color: #242424;
+                    font-size: 16px;
+                    font-weight: 600;
+
+                    @media (min-width: 767px) {
+                        font-size: 18px;
+                    }
+                }
+
+                p {
+                    color: #444;
+                    font-size: 14px;
+                    margin-bottom: 31px;
+                }
+            }
+
+            .row {
+                input {
+                    border: 1px solid #e3e3e3;
+                    font-size: 13px;
+                    height: 45px;
+                    margin-bottom: 20px;
+                    padding-left: 15px;
+                    width: 100%;
+                }
+
+
+                .message {
+                    textarea {
+                        border: 1px solid #e3e3e3;
+                        font-size: 13px;
+                        height: 130px;
+                        padding: 10px 15px;
+                        width: 100%;
+                    }
+
+                    input {
+                        background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+                        border: 1px solid #e3e3e3;
+                        height: 35px;
+                        margin-top: 15px;
+                        padding: 0 25px;
+                        text-transform: uppercase;
+                        transition: all 0.3s ease 0s;
+                        width: fit-content;
+                    }
+                }
+            }
+        }
+    }
+
+    .right {
+        
+        .contact-infos {
+            background-color: #fff;
+            .single-contact {
+                border-bottom: 1px solid #e3e3e3;
+                padding: 38px 25px;
+                display: flex;
+                gap: 2rem;
+                align-items: center;
+
+                .contact-icon {
+                    i {
+                        color: #fe4847;
+                        font-size: 30px;
+                    }
+                }
+
+                .contact-text {
+                    p {
+                        color: #242424;
+                        font-size: 16px;
+                        font-weight: 600;
+
+                        @media (min-width: 767px) {
+                            font-size: 18px;
+                        }
+                    }
+
+                    span{
+                        color: #444;
+                        font-size: 14px;
+                    }
+                }
+
+                @media (min-width: 767px) {
+                    padding: 38px 14px;
+                }
+            }
+
+            @media (max-width: 767px) {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .map-area{
+        width: 100%;
+        margin-top: 30px;
+        padding: 10px;
+        background-color: #fff;
+        iframe{
+            width: 100%;
+        }
+    }
+}
+
+
+.google-map {
+    position: relative;
+    overflow: hidden;
+}
+
+.gmap {
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: rgb(229, 227, 223);
+}
+
+
+
+
+.contact-info {
+    background-color: red;
+    box-sizing: border-box;
+    font-size: 14px;
+
+}
+
+.info {
+    background-color: yellow;
+    margin: 30px;
+    box-sizing: border-box;
+
+}
