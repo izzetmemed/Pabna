@@ -55,5 +55,3 @@ window.onresize=()=>{
     let resizeX=Math.floor(xTranslate/forHeight.clientWidth)*forHeight.clientWidth;
     smallDiv.style.transform = `translateX(${-resizeX}px)`;
 }
-  
-     
