@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pabna-View</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+
+
+
+    <div class="container-fluid m-0 p-0">
+        <!-- Contact Background Area -->
+        <section class="bg-section">
+
+        </section>
+        <!-- Accordion Area -->
+        <section class="checkout-page mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="checkout-accordion1" id="checkout-accordion1"
+                            style="border-top: 4px solid #FF6541;">
+
+                            <div class="checkout-accordion1-title d-flex align-items-center gap-3 py-0">
+
+                                <i class="fa-regular fa-folder" style="color: blue;"></i>
+
+                                <p class="mt-3">Returning customer?<span id="checkout-click" class="checkout-click">
+                                        Click here to
+                                        login</span></p>
+                            </div>
+
+                            <div class="checkout-accordion-body mt-3" id="checkout-accordion-body">
+
+                                <p>Quisque gravida turpis sit amet nulla posuere lacinia. Cras sed est sit amet ipsum
+                                    luctus.</p>
+                                <div
+                                    class="checkout-inputs d-flex justify-content-between align-items-center gap-4 mt-3">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class=" checkout-inputs-username">
+                                                <h5 class="d-inline my-1">Username Or Email Address</h5>
+                                                <span class="text-danger fw-bold ">*</span>
+                                                <input class="form form-control" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="checkout-inputs-password mt-3">
+                                                <h5 class="d-inline my-1 mt-3">Password</h5>
+                                                <span class="text-danger fw-bold ">*</span>
+
+                                                <input class="col-6 form form-control" type="text">
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+
+                                <div class="checkout-login d-flex mt-3 gap-4">
+
+                                    <button class="btn  " style="background-color: black;
+                                color: #fff;    
+                                &:hover{
+                                        background-color: #FF6541;
+                                    }">Login</button>
+
+                                    <div class="checkout-login-checkbox d-flex align-items-center gap-2">
+
+                                        <input type="checkbox">
+
+                                        <p class="mt-3">Remember me</p>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="checkout-social mt-3">
+
+                                    <p>Lost your password?</p>
+
+
+
+
+                                </div>
+
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="checkout-accordion1  mt-3" id="checkout-accordion1"
+                            style="margin-top: 0px !important;border-top: 4px solid #FF6541; padding: 0 !important; ">
+                            <div class="checkout-accordion1-title d-flex align-items-center gap-3 py-0">
+                                <i class="fa-regular fa-folder" style="color: blue;"></i>
+                                <p class="mt-3">Have a coupon?<span id="checkout-click" class="checkout-click"> Click
+                                        here to enter
+                                        your code</span></p>
+                            </div>
+                            <div class="checkout-accordion-body mt-3" id="checkout-accordion-body">
+                                <div class="checkout-accordion-coupon d-flex align-items-center gap-2">
+                                    <input class="form form-control w-25" type="text" placeholder="Coupon code">
+                                    <button class="btn">APPLY COUPON</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- Checkout Area -->
+
+
+        <section class="checkout-form mt-5">
+
+            <div class="container">
+
+
+
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+
+                        <h5 style="padding-bottom: 8px; border-bottom: 1px solid #444444a1 !important;">BILLING DETAILS</h5>
+
+                        <div class="checkout-form-input mt-3">
+                            <span class="fw-bold">Country</span>
+                            <span class="text-danger fw-bold ">*</span>
+
+                            <select name="" id="" class="w-100">
+                                <option value="">Select Country:</option>
+                                <option value="">Azerbaijan</option>
+                                <option value="">Turkey</option>
+                                <option value="">Georgia</option>
+                            </select>
+                        </div>
+
+                        <div class="checkout-form-name d-flex flex-column flex-sm-column flex-md-row flex-lg-row gap-4 mt-3">
+                           
+                            <div class="checkout-form-input w-100 mt-3">
+                                <span class="fw-bold">First Name</span>                 
+                                                               <span class="text-danger fw-bold ">*</span>
+
+                                <input class="w-100" type="text">
+                            </div>
+
+                            <div class="checkout-form-input w-100 mt-3">
+                                <span class="fw-bold">Last Name</span>
+                                <span class="text-danger fw-bold ">*</span>
+
+                                <input class="w-100" type="text">
+                            </div>
+                        </div>
+
+
+                        <div class="checkout-form-input mt-3">
+                            <p class="fw-bold">Company Name</p>
+                            <input class="w-100" type="text">
+                        </div>
+
+                       
+
+                        <div class="checkout-form-input mt-3">
+                            <p class="fw-bold d-inline"> Address</p>
+                            <span class="text-danger fw-bold ">*</span>
+                            <input class="w-100 " type="text" placeholder="Street Address">
+                            <input class="w-100 mt-3" type="text" placeholder="Apartment,suite">
+                        </div>
+
+                       
+
+                        <div class="checkout-form-input mt-3">
+                            <p class="fw-bold d-inline">Town/City</p>
+                            <span class="text-danger fw-bold ">*</span>
+                            <input class="w-100 " type="text">
+                        </div>
+
+                        <div class="checkout-form-input w-50 mt-3">
+                            <p class="">State/country</p>
+                            <span class="text-danger fw-bold ">*</span>
+
+                            <input class="w-100 " type="text">
+                        </div>
+
+                        <div class="checkout-form-input mt-3">
+                            <p>Email Address</p>
+                            <input class="w-100 " type="text">
+                        </div>
+
+                        <div class="checkout-login-checkbox d-flex align-items-center gap-2 mt-3">
+                            <input type="checkbox">
+                            <p>Create an account</p>
+                        </div>
+
+                        <textarea style="border: none; background-color: #E8EFF7;" rows="6" name="" id="textarea"
+                            class="w-100 p-3 mt-3" placeholder="Your Notes..."></textarea>
+
+                    </div>
+
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+
+                        <div class="order-checkout p-5"style="background-color: #8d8c8ca1 ;" >
+
+
+                            <div class="order-title text-uppercase fw-bold">
+                                <h5 style="padding-bottom: 8px; border-bottom: 1px solid #444444a1 !important;">Your order</h5>
+                            </div>
+
+                            <div class="text-center order-product w-75 mt-5 mx-0 mx-auto">
+
+                                <div class="product-total text-center mb-0 mx-0 mx-auto w-75">
+
+                                    <p style="font-size: 14px; font-weight:bold;">PRODUCT</p>
+
+                                    <p>TOTAL</p>
+                                </div>
+
+                                <div class="product-total w-75 w-75  mx-0 mx-auto">
+
+                                    <p style="font-size: 14px; font-weight:bold;">
+													Vestibulum suscipit </p>
+
+                                    <p >$165</p>
+                                </div>
+                                <div class="product-total w-75 w-75  mx-0 mx-auto">
+
+                                    <p style="font-size: 14px; font-weight:bold;">
+													Vestibulum suscipit </p>
+
+                                    <p >$50</p>
+                                </div>
+                              
+
+                                
+
+                                <div class="product-total w-75 mx-0  mx-auto">
+
+                                    <p style="font-size: 24px; font-weight:bold;">ORDER TOTAL</p>
+
+                                    <p style="color: #FF6541; font-weight: 700; margin-top: 5px;">$273</p>
+                                </div>
+
+                              
+
+                                <div class="row mt-3 w-100">
+                                    <div class="col-12" style="border-radius: 0% !important;
+                                    border: none !important;
+                                    &:hover{
+                                        background-color: #FF6541 !important;
+                                    }">
+                                       <button class="btn w-75 mx-0 mx-auto ms-4">APPLY COUPON</button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Contact Info Area End -->
+        <!-- Footer-->
+        <section class="footer-up">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="footer-icon row">
+                        <div class="col-12">
+                            <img src="./imgs/logo-white-text.png" alt="">
+                        </div>
+                    </div>
+                    <div class="footer-content-box text-center mt-3 mb-2 row">
+
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt
+                            ut laoreet dolore
+                            magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation.
+
+                        </p>
+                    </div>
+                    <div class="footer-icons">
+
+                        <ul class="list-unstyled d-flex justify-content-center">
+                            <li>
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-square-vimeo"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row footer-columns pb-4 ">
+                    <div class="col-lg-3 col-sm-12 footer-element">
+                        <div class="footer-element-name">
+                            <h5>
+                                CONTACT US
+                            </h5>
+                        </div>
+                        <div class="footer-element-content d-flex">
+                            <div class="elemen-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="element-text">
+                                <span>Addresss: City of London, Guildhall, PO Box 270</span>
+                            </div>
+                        </div>
+                        <div class="footer-element-content d-flex">
+                            <div class="elemen-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="element-text ">
+                                <span>Email:admin@BasicTheme.com </span>
+                            </div>
+                        </div>
+                        <div class="footer-element-content d-flex">
+                            <div class="elemen-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="element-text">
+                                <span>Phone: +123 455657589
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-12 footer-element">
+                        <div class="footer-element-name">
+                            <h5>
+                                my account
+                            </h5>
+                        </div>
+                        <div class="footer-element-content">
+                            <ul class="list-unstyled">
+                                <li><a href="#"><span class="ope">></span>Order Status</a></li>
+                                <li><a href="#"><span class="ope">></span>Register</a></li>
+                                <li><a href="#"><span class="ope">></span>Sign-in</a></li>
+                                <li><a href="#"><span class="ope">></span>My Wishlist</a></li>
+                                <li><a href="#"><span class="ope">></span>Payment Options</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-12 footer-element">
+                        <div class="footer-element-name">
+                            <h5>
+                                about us
+                            </h5>
+                        </div>
+                        <div class="footer-element-content">
+                            <ul class="list-unstyled">
+                                <li><a href="#"><span class="ope">></span>Delivery</a></li>
+                                <li><a href="#"><span class="ope">></span>Payment</a></li>
+                                <li><a href="#"><span class="ope">></span>Return Policy</a></li>
+                                <li><a href="#"><span class="ope">></span>About Us</a></li>
+                                <li><a href="#"><span class="ope">></span>Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text-center w-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12">
+                            <span>Copyright © <a href="#" class="basic-w"> BasicTheme</a>. All Rights Reserved</span>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 end-img">
+                            <img src="./imgs/payment.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    </div>
+    <!-- Footer end -->
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./sass/bootstrap/js/view.js"></script>
+</body>
+
+</html>
